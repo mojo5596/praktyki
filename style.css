@@ -3,3 +3,9 @@ body {
   color: white;
 }
 
+#guzik1 {
+  background: red;
+  color: black;
+  font-size: 50px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
