@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   margin: 0;
-  dipslay: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -10,14 +10,16 @@ header {
   background: gray;
   color: black;
   text-align: center;
-  height: 20vh;
 }
 
 main {
   flex: 6;
   background: white;
   color: black;
-  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -25,7 +27,6 @@ footer {
   background: gray;
   color: black;
   text-align: right;
-  height: 20vh;
 }
 
 #guzik1 {
