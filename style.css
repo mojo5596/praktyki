@@ -1,6 +1,31 @@
 body {
-  background: black;
-  color: white;
+  height: 100vh;
+  margin: 0;
+  dipslay: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 2;
+  background: gray;
+  color: black;
+  text-align: center;
+  height: 20vh;
+}
+
+main {
+  flex: 6;
+  background: white;
+  color: black;
+  height: 60vh;
+}
+
+footer {
+  flex: 2;
+  background: gray;
+  color: black;
+  text-align: right;
+  height: 20vh;
 }
 
 #guzik1 {
