@@ -15,5 +15,5 @@ body {
   background: blue;
   color: white;
   font-size: 10px;
-  scale(0.5);
+  transform: scale(0.5);
 }
