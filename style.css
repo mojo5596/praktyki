@@ -11,3 +11,10 @@ body {
   font-size: 50px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+#guzik1:hover {
+  background: blue;
+  color: white;
+  font-size: 10px;
+  width: 100px;
+  height: 50px;
+}
