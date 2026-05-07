@@ -1,4 +1,7 @@
 body {
   background: black;
-  font-color: white;
+  color: white;
+}
+h1 {
+  color: lime;
 }
