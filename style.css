@@ -44,6 +44,71 @@ footer {
 
 #left{
   width: 20%;
+  text-align: left;
+  background: gray;
+  margin: 10px;
+  padding-left: 5px;
+}
+#right{
+  width: 20%;
+  text-align: center;
+  background: gray;
+  margin: 10px;
+}
+#center{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 2;
+  background: gray;
+  color: black;
+  text-align: center;
+}
+
+main {
+  flex: 6;
+  background: white;
+  color: black;
+
+  display: flex;
+}
+
+footer {
+  flex: 2;
+  background: gray;
+  color: black;
+  text-align: right;
+}
+
+#guzik1 {
+  width: 600px;
+  height: 100px;
+  background: red;
+  color: black;
+  font-size: 50px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#guzik1:hover {
+  background: blue;
+  color: white;
+  font-size: 30px;
+  transform: scale(0.5);
+}
+
+#left{
+  width: 20%;
   text-align: center;
   background: gray;
   margin: 10px;
