@@ -1,9 +1,14 @@
+@font-face {
+    font-family: zegar;
+    src: url('digital-7.ttf');
+  }
+  
 body {
   height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
-}  
+}
 
 header {
   flex: 2;
@@ -54,7 +59,26 @@ footer {
   text-align: center;
   background: gray;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+#zegar{
+  height:200px;
+  width: 200px;
+  background: white;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: zegar;
+  font-size: 67px;
+}
+
 #center{
   width: 60%;
   display: flex;
