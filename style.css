@@ -8,6 +8,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background: white;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
 header {
@@ -15,14 +17,21 @@ header {
   background: gray;
   color: black;
   text-align: center;
+  transition: background 0.5s ease, color 0.5s ease;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 main {
   flex: 6;
   background: white;
   color: black;
-
+  transition: background 0.5s ease, color 0.5s ease;
   display: flex;
+  
+  
+  align-items: stretch; 
+  overflow: hidden; 
 }
 
 footer {
@@ -30,6 +39,10 @@ footer {
   background: gray;
   color: black;
   text-align: right;
+  padding: 5px;
+  transition: background 0.5s ease, color 0.5s ease;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #guzik1 {
@@ -47,13 +60,35 @@ footer {
   transform: scale(0.5);
 }
 
-#left{
-  width: 20%;
+#center {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+#left {
+  width: 20%; 
   text-align: left;
   background: gray;
-  margin: 10px;
   padding-left: 5px;
+  
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px; 
+  
+  transition: background 0.5s ease, color 0.5s ease, transform 0.5s ease, margin-left 0.5s ease;
+  transform: translateX(-100%);
+  
+  
+  margin-left: calc(-20% - 5px); 
 }
+
 #right{
   container-type: inline-size;
   container-name: zegar-kontener;
@@ -64,6 +99,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
 #zegar{
@@ -79,14 +115,53 @@ footer {
   justify-content: center;
   font-family: zegar;
   font-size: 25cqw;
+  color: black;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
-#center{
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: lightgray;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+
+/*dark mode*/
+body.dark-mode {
+  background: #2b2b2b
+}
+
+body.dark-mode header {
+  background: #1a1a1a; 
+  color: #e0e0e0;
+}
+
+body.dark-mode main {
+  background: #2b2b2b; 
+  color: #e0e0e0;
+}
+
+body.dark-mode footer {
+  background: #1a1a1a; 
+  color: #e0e0e0;
+}
+
+body.dark-mode #left {
+  background: #1a1a1a; 
+}
+
+body.dark-mode #right {
+  background: #1a1a1a;
+}
+
+body.dark-mode #center {
+  background: #222222; 
+  color: #e0e0e0;
+}
+
+body.dark-mode #zegar {
+  background: #1e1e24;
+  color: #e0e0e0;
+  border-color: #333344;
+}
+
+/*wysuwanie lewego diva*/
+#left.active {
+  transform: translateX(0);
+  margin-left: 10px;
 }

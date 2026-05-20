@@ -9,3 +9,11 @@ function godzina(){
 }
 setInterval(godzina, 1000);
 godzina();
+
+//GUZIK DARK MODE
+const guzik = document.querySelector('#guzik1');
+const body = document.querySelector('body');
+
+guzik.addEventListener('click', function darkmode(){
+    body.classList.toggle('dark-mode')
+})
