@@ -65,8 +65,8 @@ footer {
 }
 
 #zegar{
-  height:200px;
-  width: 200px;
+  aspect-ratio: 1/1;
+  width: 80%;
   background: white;
   border-radius: 50%;
   border-color: black;
@@ -76,7 +76,7 @@ footer {
   display: flex;
   justify-content: center;
   font-family: zegar;
-  font-size: 67px;
+  font-size: 4vw;
 }
 
 #center{
