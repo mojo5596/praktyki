@@ -17,3 +17,10 @@ const body = document.querySelector('body');
 guzik.addEventListener('click', function darkmode(){
     body.classList.toggle('dark-mode')
 })
+
+const menu = document.querySelector('#guzik-menu');
+const lewy = document.querySelector('#left');
+
+menu.addEventListener('click', function menu1(){
+    lewy.classList.toggle('active')
+})
