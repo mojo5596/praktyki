@@ -87,6 +87,13 @@ footer {
   transition: background 0.5s ease, color 0.5s ease, transform 0.5s ease, margin-left 0.5s ease;
   transform: translateX(-100%);
   margin-left: calc(-20% - 5px); 
+  display: flex;
+  flex-direction: column;
+}
+#left a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 #guzik-menu {
@@ -158,6 +165,9 @@ body.dark-mode footer {
 
 body.dark-mode #left {
   background: #1a1a1a; 
+  color: #e0e0e0;
+}
+body.dark-mode #left a{
   color: #e0e0e0;
 }
 
