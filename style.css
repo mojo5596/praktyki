@@ -65,6 +65,8 @@ footer {
 }
 
 #zegar{
+  container-type: inline-size;
+  container-name: zegar-kontener;
   aspect-ratio: 1/1;
   width: 80%;
   background: white;
@@ -76,7 +78,7 @@ footer {
   display: flex;
   justify-content: center;
   font-family: zegar;
-  font-size: 4vw;
+  font-size: 5cqw;
 }
 
 #center{
